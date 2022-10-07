@@ -1,0 +1,440 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Italiano
+ * @author      - 
+ * @created_by  - Ashik
+ * @created_at  - 
+ * @modified_by -
+ */
+
+/* fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+@import url(../fonts/sofiapro.css);
+
+/* fonts import -END */
+
+/* reset, root */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: "Sofia Pro";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+:root {
+    --anzac: #ca914a;
+    --anzac-light: #fcf6ef;
+    --cobalt: #0645ad;
+    --cobalt-light: #deebff;
+    --gray-1: #2c2f33;
+    --gray-2: #5a5c5f;
+    --gray-3: #a3a5a8;
+    --gray-4: #d1d3d6;
+    --gray-5: #ebeced;
+    --gray-6: #f8f8f8;
+}
+
+/* reset, root - END */
+
+/* helper , base classes */
+
+// Font family
+.ff-nunito {
+    font-family: "Nunito", sans-serif;
+}
+
+//Text  color
+.text-clr-anzac {
+    color: var(--anzac);
+}
+
+.text-clr-anzac-light {
+    color: var(--anzac-light);
+}
+
+.text-clr-cobalt {
+    color: var(--cobalt);
+}
+
+.text-clr-cobalt-light {
+    color: var(--cobalt-light);
+}
+
+.text-clr-gray-1 {
+    color: var(--gray-1);
+}
+
+.text-clr-gray-2 {
+    color: var(--gray-2);
+}
+
+.text-clr-gray-3 {
+    color: var(--gray-3);
+}
+
+.text-clr-gray-4 {
+    color: var(--gray-4);
+}
+
+.text-clr-gray-5 {
+    color: var(--gray-5);
+}
+
+.text-clr-gray-5 {
+    color: var(--gray-5);
+}
+
+.text-clr-gray-6 {
+    color: var(--gray-6);
+}
+
+// Background color class
+.anzac-bg {
+    background: var(--anzac);
+}
+
+.anzac-light-bg {
+    background: var(--anzac-light);
+}
+
+.cobalt-bg {
+    background: var(--cobalt);
+}
+
+.cobalt-light-bg {
+    background: var(--cobalt-light);
+}
+
+-gray-1-bg {
+    background: var(--gray-1);
+}
+
+.gray-2-bg {
+    background: var(--gray-2);
+}
+
+.gray-3-bg {
+    background: var(--gray-3);
+}
+
+.gray-4-bg {
+    background: var(--gray-4);
+}
+
+.gray-5-bg {
+    background: var(--gray-5);
+}
+
+.gray-5-bg {
+    background: var(--gray-5);
+}
+
+.gray-6-bg {
+    background: var(--gray-6);
+}
+
+
+// Font size
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+// Line height
+
+.lh-19 {
+    line-height: 19px;
+}
+
+.lh-20 {
+    line-height: 20px;
+}
+
+.lh-24 {
+    line-height: 24px;
+}
+
+.lh-28 {
+    line-height: 28px;
+}
+
+.lh-30 {
+    line-height: 30px;
+}
+
+.lh-45 {
+    line-height: 45px;
+}
+
+.lh-52 {
+    line-height: 52px;
+}
+
+//Font weight
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+//Border radius
+.radius-8 {
+    border-radius: 8px;
+}
+
+.radius-12 {
+    border-radius: 12px;
+}
+
+.radius-16 {
+    border-radius: 16px;
+}
+
+/* helper , base classes  - END*/
+
+/*--- Login /Start  ---*/
+.login-wrapper {
+    .left-banner {
+        height: 100vh;
+        background-image: url(../img/main-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/*--- Login /End  ---*/
+
+/*--- Global Login /Start  ---*/
+/* Login  - Start */
+
+//Input field
+.login-form-area {
+    max-width: 570px;
+    width: 100%;
+    padding-left: 95px;
+
+    @media (max-width: 1200px) {
+        padding-right: 20px;
+    }
+
+    @media (max-width: 992px) {
+        margin: 0 auto;
+        padding: 80px 20px;
+    }
+}
+
+.animate-label {
+    position: relative;
+
+    label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s all ease;
+        width: 100%;
+        padding: 16px 16px 16px 52px;
+        color: var(--gray-3);
+        cursor: pointer;
+    }
+
+    input:valid+label,
+    input:focus+label {
+        bottom: 22px;
+        font-size: 12px;
+    }
+
+    input:focus+label {
+        color: var(--gray-3);
+    }
+}
+
+//general styling to match google design
+
+input {
+    width: 100%;
+    border: 1px solid var(--gray-4);
+    padding: 12px 16px 12px 52px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// Google & Facebook login button
+.google-btn,
+.facebook-btn {
+    text-decoration: none;
+    padding: 16px;
+    letter-spacing: 0.21875px;
+
+}
+
+.google-btn {
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.54);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.24);
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.54);
+    }
+}
+
+.facebook-btn {
+    background: #1977F3;
+    color: #FFFFFF;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+//Input field
+
+
+.randomClass {
+    padding: 17px 15px;
+    letter-spacing: 0.07em;
+}
+
+.toggle-password,
+.confirm-password {
+    color: #9ea3ae;
+}
+
+.pass-show-hide {
+    bottom: 13px;
+}
+
+.form-field-area {
+    padding: 8px 0px 30px;
+}
+
+
+
+// Icons style
+.input-icon-style {
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 16px 13px;
+}
+
+.email-icon {
+    background-image: url(../img/envelope.svg);
+}
+
+.password-icon {
+    background-image: url(../img/password.svg);
+}
+
+
+// Common fill button -- Start
+
+.text-hover-clr {
+    transition: all .2s linear;
+
+    &:hover {
+        color: var(--anzac);
+    }
+}
+
+.common-fill-btn {
+    padding: 17px 39px;
+    background: var(--anzac);
+    border: 1px solid var(--anzac);
+    color: #ffffff;
+    transition: all .2s linear;
+
+    &:hover {
+        background: var(--anzac-light);
+        color: var(--anzac);
+        border: 1px solid var(--anzac);
+    }
+}
+
+// Common fill button -- End
+
+
+/*--- Global Login /End  ---*/
+
+/*--- Order type /Start  ---*/
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+
+/*--- Order type /End  ---*/
+
+/*--- Login /Start  ---*/
+/*--- Login /End  ---*/
+
+/*--- Login /Start  ---*/
+/*--- Login /End  ---*/
