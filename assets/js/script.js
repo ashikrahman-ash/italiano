@@ -61,8 +61,6 @@ $(document).ready(function () {
     // Password show hide -- End
 
     // Form tab -- Start
-
-
     var navListItems = $('div.setup-panel div a'),
             allWells = $('.setup-content'),
             allNextBtn = $('.nextBtn'),
@@ -76,8 +74,8 @@ $(document).ready(function () {
                 $item = $(this);
 
         if (!$item.hasClass('disabled')) {
-            navListItems.removeClass('btn-primary').addClass('btn-default');
-            $item.addClass('btn-primary');
+            navListItems.removeClass('active-btn').addClass('normal-btn');
+            $item.addClass('active-btn');
             allWells.hide();
             $target.show();
             $target.find('input:eq(0)').focus();
