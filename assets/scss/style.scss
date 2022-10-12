@@ -443,6 +443,7 @@ input {
 
 .tabs__content {
     display: none;
+    // min-height: 360px;
 }
 
 .tabs__toggle {
@@ -476,6 +477,54 @@ input {
             .radio-active {
                 display: inline-block !important;
             }
+        }
+    }
+}
+
+// inner tab
+.tab-content{
+    display: none;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+//inner tab
+
+.repeat-order {
+    transition: all .2s linear;
+    svg * {
+        transition: all .2s linear;
+    }
+    &:hover {
+        color: var(--gray-1);
+
+        svg * {
+            stroke: var(--gray-1)
+        }
+    }
+}
+
+.continue-btn {
+    padding: 15px 40px 15px 18px;
+    &:focus {
+        outline: none;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 18px;
+        top: 16px;
+        width: 18px;
+        height: 18px;
+        background: url(../img/arrow-right.svg);
+        background-repeat: no-repeat;
+        transition: all .2s linear;
+    }
+
+    &:hover {
+        &::after {
+            right: 12px;
         }
     }
 }

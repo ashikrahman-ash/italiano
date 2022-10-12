@@ -411,6 +411,51 @@ input:focus {
   display: inline-block !important;
 }
 
+.tab-content {
+  display: none;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+.repeat-order {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.repeat-order svg * {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.repeat-order:hover {
+  color: var(--gray-1);
+}
+.repeat-order:hover svg * {
+  stroke: var(--gray-1);
+}
+
+.continue-btn {
+  padding: 15px 40px 15px 18px;
+}
+.continue-btn:focus {
+  outline: none;
+}
+.continue-btn::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  background: url(../img/arrow-right.svg);
+  background-repeat: no-repeat;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.continue-btn:hover::after {
+  right: 12px;
+}
+
 /*--- Order type /End  ---*/
 /*--- Login /Start  ---*/
 /*--- Login /End  ---*/

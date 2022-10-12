@@ -109,6 +109,22 @@ $(document).ready(function () {
     //   document.getElementById("tabs_content3").classList.remove("is-active");
     // });
 
+
+    //inner tab
+    $(function(){
+
+        $('.tab-inner-radio .form-check').click(function () {
+            var tab_id = $(this).attr('data-tab');
+ 
+            $('.tab-inner-radio .form-check').removeClass('current');
+            $('.tab-content').removeClass('current');
+ 
+            $(this).addClass('current');
+            $("#" + tab_id).addClass('current');
+        })
+    })
+    //inner tab
+
     // Form tab -- End
 
 });
