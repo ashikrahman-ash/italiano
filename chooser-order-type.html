@@ -56,136 +56,85 @@
                     <div class="left-banner"></div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center pe-auto pe-lg-0">
-                    <div class="login-form-area ff-nunito w-100">
+                    <div class="login-form-area w-100">
                         <div class="logo mb-4">
                             <a href="index.html">
                                 <img src="assets/img/italiano-logo.png" alt="Italiano logo">
                             </a>
                         </div>
 
-                        <h2 class="fs-30 lh-45 text-clr-gray-1 fw-bold mb-3">
+                        <h2 class="fs-30 lh-45 text-clr-gray-1 fw-bold mb-3 ff-nunito">
                             How would you like to get your order?
                         </h2>
 
-                        <!-- <div class="text-center ff-nunito">
-                            <form action="#" method="POST">
-                                <div class="form-field-area">
-                                    <div class="animate-label text-start mb-4 ff-nunito">
-                                        <p class="fs-14 lh-19 text-clr-gray-1 fw-bold mb-2">Email</p>
-                                        <input type="email" id="email"
-                                            class="ff-nunito fs-6 lh-28 fw-semibold radius-16 input-icon-style email-icon"
-                                            required />
-                                        <label for="email" class="ff-nunito"> Email </label>
-                                    </div>
 
-                                    <div id="show_hide_password"
-                                        class="input-box position-relative animate-label text-start ">
-                                        <p class="fs-14 lh-19 text-clr-gray-1 fw-bold mb-2">Password</p>
-                                        <input type="password" id="password-field"
-                                            class="ff-nunito fs-6 lh-28 fw-semibold radius-16 input-icon-style password-icon"
-                                            name="password" required />
-                                        <label for="password-field"> Password </label>
 
-                                        <div class="pass-show-hide position-absolute end-0 me-3">
-                                            <a href="#">
-                                                <i toggle="#password-field"
-                                                    class="fa fa-fw fa-eye field-icon toggle-password"
-                                                    aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="accept-box text-end mt-2">
-                                        <a href="reset-password.html"
-                                            class="text-clr-cobalt text-hover-clr text-decoration-none fs-14 lh-24 fw-semibold">Forgot
-                                            Password?</a>
-                                    </div>
-                                </div>
-
-                                <button type="submit"
-                                    class="common-fill-btn text-center w-100 radius-12 fs-6 lh-20 fw-bold">Login</button>
-
-                                <p class="fs-18 lh-30 text-clr-gray-1 fw-bold mb-2 text-center mt-3 pb-3">or</p>
-
-                                <div class="social-media-login d-flex align-items-center flex-wrap gap-3 pb-2">
-                                    <a href="#"
-                                        class="google-btn text-center w-100 radius-8 fs-6 lh-20 fw-bold w-100 d-block">
-                                        <img src="assets/img/google.svg" alt="Google" class="img-fluid pe-3">
-                                        Sign in with Google
-                                    </a>
-                                    <a href="#"
-                                        class="facebook-btn text-center w-100 radius-8 fs-6 lh-20 fw-bold w-100 d-block">
-                                        <img src="assets/img/facebook.svg" alt="Google" class="img-fluid pe-3">
-                                        Sign in with Facebook
-                                    </a>
-                                </div>
-
-                                <p class="fs-6 lh-20 text-clr-gray-1 fw-bold mb-2 text-center mt-3 pb-2">Skip,
-                                    Order as guest</p>
-
-                                <p class="fs-6 lh-28 text-clr-gray-1 fw-semibold mb-2 text-center mt-3">Dont
-                                    have an account? <a href="#"
-                                        class="text-clr-anzac text-decoration-none ">Create Account</a></p>
-                            </form>
-                        </div> -->
 
                         <div class="step-form-wrapper form-field-area">
 
-                            <div class="container">
-
-                                <div class="stepwizard">
-                                    <div class="stepwizard-row setup-panel">
-                                        <div class="stepwizard-step">
-                                            <a href="#step-1" class="btn-circle text-decoration-none fs-14 lh-19 fw-bold radius-12 text-clr-gray-2">Delivery</a>
-                                            
-                                        </div>
-                                        <div class="stepwizard-step">
-                                            <a href="#step-2" class="btn-circle text-decoration-none fs-14 lh-19 fw-bold radius-12 text-clr-gray-2">Pick up</a>
-                                            
-                                        </div>
-                                         <div class="stepwizard-step">
-                                            <a href="#step-4" class="btn-circle text-decoration-none fs-14 lh-19 fw-bold radius-12 text-clr-gray-2">Dine in</a>
-                                            
-                                        </div>
+                            <div class="tabs">
+                                <div class="tabs__head d-flex align-items-center justify-content-between gap-2 radius-12 bg-white ff-nunito">
+                                    <div class="tabs__toggle is-active fs-14 lh-19 fw-bold text-clr-gray-2 radius-12 text-center d-flex align-items-center justify-content-center" id="tabs_1">
+                                        <span class="tabs__name fs-14 lh-19 fw-bold">Delivery</span>
+                                    </div>
+                                    <div class="tabs__toggle fs-14 lh-19 fw-bold text-clr-gray-2 radius-12 text-center d-flex align-items-center justify-content-center" id="tabs_2">
+                                        <span class="tabs__name fs-14 lh-19 fw-bold">Pick up</span>
+                                    </div>
+                                    <div class="tabs__toggle fs-14 lh-19 fw-bold text-clr-gray-2 radius-12 text-center d-flex align-items-center justify-content-center" id="tabs_3">
+                                        <span class="tabs__name fs-14 lh-19 fw-bold">Dine in</span>
                                     </div>
                                 </div>
-                                
-                                <form role="form">
 
-                                    <div class="row setup-content" id="step-1">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12">
-                                                <h3> Step 1</h3>
-                                                <p>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia repellendus animi nihil modi maxime vitae fugit, ratione cupiditate? Ipsum qui exercitationem optio. Expedita, ducimus vitae nostrum dolorem quisquam enim. Reprehenderit.</p>
-                                                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                <div class="tabs__body">
+                                    <div class="tabs__content is-active" id="tabs_content1">
+                                        
+                                        <div class="heading-radio-option ff-nunito d-flex align-items-center justify-content-between pb-2">
+                                            <div class="tabs-heading-text d-flex align-items-center gap-2">
+                                                <img src="assets/img/clock-icon.svg" alt="clock icon" class="img-fluid">
+                                                <h4 class="fs-22 lh-30 fw-bold mb-0">
+                                                    Delivery Time
+                                                </h4>
+                                            </div>
+                                            <div class="tab-inner-radio d-flex align-items-center gap-4">
+                                                <div class="form-check">
+                                                    <label class="radio-cirle-btn" for="asap">
+                                                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="asap">
+                                                        <img src="assets/img/radio-btn-circle.svg" alt="" class="radio-normal img-fluid">
+                                                        <img src="assets/img/radio-action-circle.svg" alt="" class="img-fluid d-none radio-active">
+                                                        <span class="fs-6 lh-26 fw-bold text-clr-gray-1 ms-2">ASAP</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="radio-cirle-btn" for="later">
+                                                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="later">
+                                                        <img src="assets/img/radio-btn-circle.svg" alt="" class="radio-normal img-fluid">
+                                                        <img src="assets/img/radio-action-circle.svg" alt="" class="img-fluid d-none radio-active">
+                                                        <span class="fs-6 lh-26 fw-bold text-clr-gray-1 ms-2">Later</span>
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
+                                        
+                                        <p class="tabs__text mt-3">
+                                            We will need approximate 15 minutes to prepare the order, and then 45 more minutes to deliver.
+                                        </p>
+                                        <button class="btn1">Next</button>
                                     </div>
-                                    <div class="row setup-content" id="step-2">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12">
-                                                <h3> Step 2</h3>
-                                                <p>2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia repellendus animi nihil modi maxime vitae fugit, ratione cupiditate? Ipsum qui exercitationem optio. Expedita, ducimus vitae nostrum dolorem quisquam enim. Reprehenderit.</p>
-                                                <button class="btn btn-default prevBtn btn-lg pull-left" type="button" >Prev</button>
-                                                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                                            </div>
-                                        </div>
+                                    <div class="tabs__content" id="tabs_content2">
+                                        <h2 class="tabs__title">Second Title</h2>
+                                        <p class="tabs__text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora natus voluptas, molestias voluptates consequuntur quibusdam aspernatur expedita tempore libero excepturi obcaecati earum minus omnis adipisci fuga officia, autem, perferendis voluptatibus!
+                                        </p>
+                                        <button class="btn2">Next</button>
                                     </div>
-                                    
-                                    <div class="row setup-content" id="step-4">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12">
-                                                <h3> Step 3</h3>
-                                                <p>3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia repellendus animi nihil modi maxime vitae fugit, ratione cupiditate? Ipsum qui exercitationem optio. Expedita, ducimus vitae nostrum dolorem quisquam enim. Reprehenderit.</p>
-
-                                                <button class="btn btn-default prevBtn btn-lg pull-left" type="button" >Prev</button>
-                                                <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
-                                            </div>
-                                        </div>
+                                    <div class="tabs__content" id="tabs_content3">
+                                        <h2 class="tabs__title">Third Title</h2>
+                                        <p class="tabs__text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quasi commodi nisi ex nostrum, aspernatur dicta perferendis deserunt reiciendis a delectus molestias eius porro, tempore molestiae ipsam sit quam aut officia, autem, perferendis?
+                                        </p>
+                                        <button class="btn3">Next</button>
                                     </div>
-
-                                </form>
-
+                                </div>
                             </div>
 
                         </div>

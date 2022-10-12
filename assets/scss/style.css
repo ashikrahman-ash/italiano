@@ -1,12 +1,14 @@
 /**
  * @Main scss for (Template/Project Name)
- * @project     - Project Name
+ * @project     - Italiano
  * @author      - 
- * @created_by  - kawsar bin siraj
+ * @created_by  - Ashik
  * @created_at  - 
  * @modified_by -
  */
 /* fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+@import url(../fonts/sofiapro.css);
 /* fonts import -END */
 /* reset, root */
 * {
@@ -17,13 +19,317 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  font-family: "Sofia Pro";
+  font-weight: 400;
+  font-size: 16px; }
 
 :root {
-  --mainColor: #F6E3BA; }
+  --anzac: #ca914a;
+  --anzac-light: #fcf6ef;
+  --cobalt: #0645ad;
+  --cobalt-light: #deebff;
+  --gray-1: #2c2f33;
+  --gray-2: #5a5c5f;
+  --gray-3: #a3a5a8;
+  --gray-4: #d1d3d6;
+  --gray-5: #ebeced;
+  --gray-6: #f8f8f8; }
 
 /* reset, root - END */
 /* helper , base classes */
+.ff-nunito {
+  font-family: "Nunito", sans-serif; }
+
+.text-clr-anzac {
+  color: var(--anzac); }
+
+.text-clr-anzac-light {
+  color: var(--anzac-light); }
+
+.text-clr-cobalt {
+  color: var(--cobalt); }
+
+.text-clr-cobalt-light {
+  color: var(--cobalt-light); }
+
+.text-clr-gray-1 {
+  color: var(--gray-1); }
+
+.text-clr-gray-2 {
+  color: var(--gray-2); }
+
+.text-clr-gray-3 {
+  color: var(--gray-3); }
+
+.text-clr-gray-4 {
+  color: var(--gray-4); }
+
+.text-clr-gray-5 {
+  color: var(--gray-5); }
+
+.text-clr-gray-5 {
+  color: var(--gray-5); }
+
+.text-clr-gray-6 {
+  color: var(--gray-6); }
+
+.anzac-bg {
+  background: var(--anzac); }
+
+.anzac-light-bg {
+  background: var(--anzac-light); }
+
+.cobalt-bg {
+  background: var(--cobalt); }
+
+.cobalt-light-bg {
+  background: var(--cobalt-light); }
+
+-gray-1-bg {
+  background: var(--gray-1); }
+
+.gray-2-bg {
+  background: var(--gray-2); }
+
+.gray-3-bg {
+  background: var(--gray-3); }
+
+.gray-4-bg {
+  background: var(--gray-4); }
+
+.gray-5-bg {
+  background: var(--gray-5); }
+
+.gray-5-bg {
+  background: var(--gray-5); }
+
+.gray-6-bg {
+  background: var(--gray-6); }
+
+.fs-14 {
+  font-size: 14px; }
+
+.fs-18 {
+  font-size: 18px; }
+
+.fs-22 {
+  font-size: 22px; }
+
+.fs-30 {
+  font-size: 30px; }
+
+.fs-36 {
+  font-size: 36px; }
+
+.lh-19 {
+  line-height: 19px; }
+
+.lh-20 {
+  line-height: 20px; }
+
+.lh-24 {
+  line-height: 24px; }
+
+.lh-28 {
+  line-height: 28px; }
+
+.lh-30 {
+  line-height: 30px; }
+
+.lh-45 {
+  line-height: 45px; }
+
+.lh-52 {
+  line-height: 52px; }
+
+.fw-medium {
+  font-weight: 500; }
+
+.fw-semibold {
+  font-weight: 600; }
+
+.radius-8 {
+  border-radius: 8px; }
+
+.radius-12 {
+  border-radius: 12px; }
+
+.radius-16 {
+  border-radius: 16px; }
+
 /* helper , base classes  - END*/
+/*--- Login /Start  ---*/
+.login-wrapper .left-banner {
+  height: 100vh;
+  background-image: url(../img/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*--- Login /End  ---*/
+/*--- Global Login /Start  ---*/
+/* Login  - Start */
+.login-form-area {
+  max-width: 570px;
+  width: 100%;
+  padding-left: 95px; }
+  @media (max-width: 1200px) {
+    .login-form-area {
+      padding-right: 20px; } }
+  @media (max-width: 992px) {
+    .login-form-area {
+      margin: 0 auto;
+      padding: 80px 20px; } }
+
+.animate-label {
+  position: relative; }
+  .animate-label label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all ease;
+    width: 100%;
+    padding: 16px 16px 16px 52px;
+    color: var(--gray-3);
+    cursor: pointer; }
+  .animate-label input:valid + label,
+  .animate-label input:focus + label {
+    bottom: 22px;
+    font-size: 12px; }
+  .animate-label input:focus + label {
+    color: var(--gray-3); }
+
+input {
+  width: 100%;
+  border: 1px solid var(--gray-4);
+  padding: 12px 16px 12px 52px; }
+  input:focus {
+    outline: none; }
+
+.google-btn,
+.facebook-btn {
+  text-decoration: none;
+  padding: 16px;
+  letter-spacing: 0.21875px; }
+
+.google-btn {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.24); }
+  .google-btn:hover {
+    color: rgba(0, 0, 0, 0.54); }
+
+.facebook-btn {
+  background: #1977F3;
+  color: #FFFFFF; }
+  .facebook-btn:hover {
+    color: #ffffff; }
+
+.randomClass {
+  padding: 17px 15px;
+  letter-spacing: 0.07em; }
+
+.toggle-password,
+.confirm-password {
+  color: #9ea3ae; }
+
+.pass-show-hide {
+  bottom: 13px; }
+
+.form-field-area {
+  padding: 8px 0px 30px; }
+
+.input-icon-style {
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 16px 13px; }
+
+.email-icon {
+  background-image: url(../img/envelope.svg); }
+
+.password-icon {
+  background-image: url(../img/password.svg); }
+
+.text-hover-clr {
+  transition: all .2s linear; }
+  .text-hover-clr:hover {
+    color: var(--anzac); }
+
+.common-fill-btn {
+  padding: 17px 39px;
+  background: var(--anzac);
+  border: 1px solid var(--anzac);
+  color: #ffffff;
+  transition: all .2s linear; }
+  .common-fill-btn:hover {
+    background: var(--anzac-light);
+    color: var(--anzac);
+    border: 1px solid var(--anzac); }
+
+/*--- Global Login /End  ---*/
+/*--- Order type /Start  ---*/
+.tabs {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%; }
+
+.tabs__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 10px 5px;
+  margin-bottom: 20px; }
+
+.tabs__toggle {
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in; }
+
+.tabs__body {
+  background: #fff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  position: relative; }
+
+.tabs__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #484848;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.tabs__text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #484848; }
+
+.tabs__content {
+  display: none; }
+
+.tabs__toggle {
+  width: 144px;
+  height: 36px; }
+
+.tabs__toggle.is-active {
+  background: var(--anzac);
+  color: #ffffff;
+  width: 144px;
+  height: 36px; }
+
+.tabs__toggle.is-active .tabs__name {
+  color: #ffffff; }
+
+.tabs__content.is-active {
+  display: block; }
+
+/*--- Order type /End  ---*/
+/*--- Login /Start  ---*/
+/*--- Login /End  ---*/
+/*--- Login /Start  ---*/
+/*--- Login /End  ---*/
 
 /*# sourceMappingURL=style.css.map */

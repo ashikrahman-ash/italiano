@@ -61,56 +61,53 @@ $(document).ready(function () {
     // Password show hide -- End
 
     // Form tab -- Start
-    var navListItems = $('div.setup-panel div a'),
-            allWells = $('.setup-content'),
-            allNextBtn = $('.nextBtn'),
-            allPrevBtn = $('.prevBtn');
-
-    allWells.hide();
-
-    navListItems.click(function (e) {
-        e.preventDefault();
-        var $target = $($(this).attr('href')),
-                $item = $(this);
-
-        if (!$item.hasClass('disabled')) {
-            navListItems.removeClass('active-btn').addClass('normal-btn');
-            $item.addClass('active-btn');
-            allWells.hide();
-            $target.show();
-            $target.find('input:eq(0)').focus();
-        }
+    let tabs = document.querySelectorAll('.tabs__toggle');
+    let contents = document.querySelectorAll('.tabs__content');
+    
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            contents.forEach((content) => {
+                content.classList.remove('is-active');
+            });
+            tabs.forEach((tab) => {
+                tab.classList.remove('is-active');
+            });
+            contents[index].classList.add('is-active');
+            tabs[index].classList.add('is-active');
+        });
     });
-
-    allNextBtn.click(function(){
-        var curStep = $(this).closest(".setup-content"),
-            curStepBtn = curStep.attr("id"),
-            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-            curInputs = curStep.find("input[type='text'],input[type='url']"),
-            isValid = true;
-
-        $(".form-group").removeClass("has-error");
-        for(var i=0; i<curInputs.length; i++){
-            if (!curInputs[i].validity.valid){
-                isValid = false;
-                $(curInputs[i]).closest(".form-group").addClass("has-error");
-            }
-        }
-
-        if (isValid)
-            nextStepWizard.removeAttr('disabled').trigger('click');
+    
+    
+    // For Next Button 
+    
+    let btnNext1 = document.querySelector(".btn1");
+    let btnNext2 = document.querySelector(".btn2");
+    // let btnNext3 = document.querySelector(".btn3");
+    
+    
+    btnNext1.addEventListener("click", () => {
+      document.getElementById("tabs_2").classList.add("is-active");
+      document.getElementById("tabs_content2").classList.add("is-active");
+    
+      document.getElementById("tabs_1").classList.remove("is-active");
+      document.getElementById("tabs_content1").classList.remove("is-active");
     });
-
-    allPrevBtn.click(function(){
-        var curStep = $(this).closest(".setup-content"),
-            curStepBtn = curStep.attr("id"),
-            prevStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
-
-        $(".form-group").removeClass("has-error");
-        prevStepWizard.removeAttr('disabled').trigger('click');
+    
+    btnNext2.addEventListener("click", () => {
+      document.getElementById("tabs_3").classList.add("is-active");
+      document.getElementById("tabs_content3").classList.add("is-active");
+    
+      document.getElementById("tabs_2").classList.remove("is-active");
+      document.getElementById("tabs_content2").classList.remove("is-active");
     });
-
-    $('div.setup-panel div a.btn-primary').trigger('click');
+    
+    // btnNext3.addEventListener("click", () => {
+    //   document.getElementById("tabs_1").classList.add("is-active");
+    //   document.getElementById("tabs_content1").classList.add("is-active");
+    
+    //   document.getElementById("tabs_3").classList.remove("is-active");
+    //   document.getElementById("tabs_content3").classList.remove("is-active");
+    // });
 
     // Form tab -- End
 
