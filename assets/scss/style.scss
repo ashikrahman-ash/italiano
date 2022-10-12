@@ -443,7 +443,10 @@ input {
 
 .tabs__content {
     display: none;
-    // min-height: 360px;
+    
+}
+.tabs-inner-content {
+    min-height: 360px;
 }
 
 .tabs__toggle {
