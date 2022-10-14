@@ -38,6 +38,7 @@ body {
   --gray-4: #d1d3d6;
   --gray-5: #ebeced;
   --gray-6: #f8f8f8;
+  --gray-7: #6E6E72;
 }
 
 /* reset, root - END */
@@ -90,6 +91,10 @@ body {
   color: var(--gray-6);
 }
 
+.text-clr-gray-7 {
+  color: var(--gray-7);
+}
+
 .anzac-bg {
   background: var(--anzac);
 }
@@ -132,6 +137,10 @@ body {
 
 .gray-6-bg {
   background: var(--gray-6);
+}
+
+.fs-12 {
+  font-size: 12px;
 }
 
 .fs-14 {
@@ -214,6 +223,10 @@ body {
 /*--- Login /End  ---*/
 /*--- Global Login /Start  ---*/
 /* Login  - Start */
+.login-form-logo {
+  max-width: 95px;
+}
+
 .login-form-area {
   max-width: 570px;
   width: 100%;
@@ -461,7 +474,12 @@ input:focus {
 }
 
 /*--- Order type /End  ---*/
-/*--- Login /Start  ---*/
-/*--- Login /End  ---*/
+/*--- Selected delivery outlet  /Start  ---*/
+.menubar-logo {
+  max-width: 49px;
+  width: 100%;
+}
+
+/*--- Selected delivery outlet /End  ---*/
 /*--- Login /Start  ---*/
 /*--- Login /End  ---*/

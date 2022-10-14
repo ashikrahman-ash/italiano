@@ -59,15 +59,13 @@
                     <div class="login-form-area w-100">
                         <div class="logo mb-4">
                             <a href="index.html">
-                                <img src="assets/img/italiano-logo.png" alt="Italiano logo">
+                                <img src="assets/img/Logo-italiano.svg" alt="Italiano logo" class=" img-fluid login-form-logo">
                             </a>
                         </div>
 
                         <h2 class="fs-30 lh-45 text-clr-gray-1 fw-bold mb-3 ff-nunito">
                             How would you like to get your order?
                         </h2>
-
-
 
 
                         <div class="step-form-wrapper form-field-area">
@@ -86,8 +84,8 @@
                                 </div>
 
                                 <div class="tabs__body mt-2">
+
                                     <div class="tabs__content is-active " id="tabs_content1">
-                                        
                                         <div class="tabs-inner-content d-flex flex-column justify-content-between">
                                             <div class="">
                                                 <div class="heading-radio-option ff-nunito d-flex align-items-center justify-content-between pb-2">
@@ -150,22 +148,129 @@
                                             </div>
                                         </div>
                                     </div>
-
-
+                                    
                                     <div class="tabs__content" id="tabs_content2">
-                                        <h2 class="tabs__title">Second Title</h2>
-                                        <p class="tabs__text">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora natus voluptas, molestias voluptates consequuntur quibusdam aspernatur expedita tempore libero excepturi obcaecati earum minus omnis adipisci fuga officia, autem, perferendis voluptatibus!
-                                        </p>
-                                        <button class="btn2">Next</button>
+                                        <div class="tabs-inner-content d-flex flex-column justify-content-between">
+                                            <div class="">
+                                                <div class="heading-radio-option ff-nunito pb-2">
+        
+                                                    <div class="tab-inner-radio d-flex align-items-center gap-4">
+                                                        <div class="form-check current ps-0">
+                                                            <label class="radio-cirle-btn" for="curbside">
+                                                                <input class="form-check-input d-none" type="radio" name="curbside" id="curbside" checked>
+                                                                <img src="assets/img/radio-btn-circle.svg" alt="" class="radio-normal img-fluid">
+                                                                <img src="assets/img/radio-action-circle.svg" alt="" class="img-fluid d-none radio-active">
+                                                                <span class="fs-6 lh-26 fw-bold text-clr-gray-1 ms-2">Curbside pick up</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="radio-cirle-btn" for="storePick">
+                                                                <input class="form-check-input d-none" type="radio" name="curbside" id="storePick">
+                                                                <img src="assets/img/radio-btn-circle.svg" alt="" class="radio-normal img-fluid">
+                                                                <img src="assets/img/radio-action-circle.svg" alt="" class="img-fluid d-none radio-active">
+                                                                <span class="fs-6 lh-26 fw-bold text-clr-gray-1 ms-2">In store pick up</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="tab-content-wrapper">
+                                                    <div id="tab-3" class="tab-content current">
+                                                        <p class="tabs__text mt-3">
+                                                            We will need approximate 15 minutes to prepare the order, and then 45 more minutes to deliver.
+                                                        </p>
+                                                    </div>
+                                                    <div id="tab-4" class="tab-content">
+                                                        <p class="tabs__text mt-3">
+                                                            We will need approximate 15 minutes to prepare the order.
+                                                        </p>
+                                                    </div>
+                                                </div> -->
+                                                <p class="fs-18 lh-30 fw-semibold ff-nunito mt-2 mb">
+                                                    or
+                                                    <a href="#" class="fs-6 lh-20 fw-bold text-decoration-none text-clr-anzac repeat-order ms-2">
+                                                        Repeat an order
+                                                        <span class="ps-2">
+                                                            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.58008 4.15991H15.4201C17.0801 4.15991 18.4201 5.49991 18.4201 7.15991V10.4799" stroke="#CA914A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.74008 1L1.58008 4.15997L4.74008 7.32001" stroke="#CA914A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M18.4201 17.84H4.58008C2.92008 17.84 1.58008 16.5 1.58008 14.84V11.52" stroke="#CA914A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M15.2598 20.9999L18.4198 17.84L15.2598 14.6799" stroke="#CA914A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>                                                        
+                                                        </span>
+                                                    </a>
+                                                </p>
+                                            </div>
+    
+                                            <div class="continue-btn-wrap">
+                                                <button class="btn2 continue-btn radius-12 anzac-bg border-0 text-white fs-6 lh-20 fw-bold ff-nunito position-relative">Continue</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="tabs__content" id="tabs_content3">
-                                        <h2 class="tabs__title">Third Title</h2>
-                                        <p class="tabs__text">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quasi commodi nisi ex nostrum, aspernatur dicta perferendis deserunt reiciendis a delectus molestias eius porro, tempore molestiae ipsam sit quam aut officia, autem, perferendis?
-                                        </p>
-                                        <button class="btn3">Next</button>
+                                    
+                                    <div class="tabs__content " id="tabs_content3">
+                                        <div class="tabs-inner-content d-flex flex-column justify-content-between">
+                                            <div class="">
+                                                <div class="heading-radio-option ff-nunito d-flex align-items-center justify-content-between pb-2">
+                                                    <div class="tabs-heading-text d-flex align-items-center gap-2">
+                                                        <img src="assets/img/clock-icon.svg" alt="clock icon" class="img-fluid">
+                                                        <h4 class="fs-22 lh-30 fw-bold mb-0">
+                                                            Delivery Time
+                                                        </h4>
+                                                    </div>
+        
+                                                    <div class="tab-inner-radio d-flex align-items-center gap-4">
+                                                        <div class="form-check current" data-tab="tab-1">
+                                                            <label class="radio-cirle-btn" for="asap2">
+                                                                <input class="form-check-input d-none" type="radio" name="flexRadioDefault2" id="asap2" checked>
+                                                                <img src="assets/img/radio-btn-circle.svg" alt="" class="radio-normal img-fluid">
+                                                                <img src="assets/img/radio-action-circle.svg" alt="" class="img-fluid d-none radio-active">
+                                                                <span class="fs-6 lh-26 fw-bold text-clr-gray-1 ms-2">ASAP</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check"  data-tab="tab-2">
+                                                            <label class="radio-cirle-btn" for="later2">
+                                                                <input class="form-check-input d-none" type="radio" name="flexRadioDefault2" id="later2">
+                                                                <img src="assets/img/radio-btn-circle.svg" alt="" class="radio-normal img-fluid">
+                                                                <img src="assets/img/radio-action-circle.svg" alt="" class="img-fluid d-none radio-active">
+                                                                <span class="fs-6 lh-26 fw-bold text-clr-gray-1 ms-2">Later</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-content-wrapper">
+                                                    <div id="tab-1" class="tab-content current">
+                                                        <p class="tabs__text mt-3">
+                                                            We will need approximate 15 minutes to prepare the order, and then 45 more minutes to deliver.
+                                                        </p>
+                                                    </div>
+                                                    <div id="tab-2" class="tab-content">
+                                                        <p class="tabs__text mt-3">
+                                                            We will need approximate 15 minutes to prepare the order.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="fs-18 lh-30 fw-semibold ff-nunito mt-2 mb">
+                                                    or
+                                                    <a href="#" class="fs-6 lh-20 fw-bold text-decoration-none text-clr-anzac repeat-order ms-2">
+                                                        Repeat an order
+                                                        <span class="ps-2">
+                                                            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.58008 4.15991H15.4201C17.0801 4.15991 18.4201 5.49991 18.4201 7.15991V10.4799" stroke="#CA914A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.74008 1L1.58008 4.15997L4.74008 7.32001" stroke="#CA914A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M18.4201 17.84H4.58008C2.92008 17.84 1.58008 16.5 1.58008 14.84V11.52" stroke="#CA914A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M15.2598 20.9999L18.4198 17.84L15.2598 14.6799" stroke="#CA914A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>                                                        
+                                                        </span>
+                                                    </a>
+                                                </p>
+                                            </div>
+    
+                                            <div class="continue-btn-wrap">
+                                                <button class="btn3 continue-btn radius-12 anzac-bg border-0 text-white fs-6 lh-20 fw-bold ff-nunito position-relative">Continue</button>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
 
