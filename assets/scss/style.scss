@@ -8,7 +8,7 @@
  */
 
 /* fonts import */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
 @import url(../fonts/sofiapro.css);
 
 /* fonts import -END */
@@ -41,6 +41,7 @@ body {
     --gray-5: #ebeced;
     --gray-6: #f8f8f8;
     --gray-7: #6E6E72;
+    --mantis: #8FC853;
     
 }
 
@@ -51,6 +52,9 @@ body {
 // Font family
 .ff-nunito {
     font-family: "Nunito", sans-serif;
+}
+.ff-sofia {
+    font-family: "Sofia Pro";
 }
 
 //Text  color
@@ -118,7 +122,7 @@ body {
     background: var(--cobalt-light);
 }
 
--gray-1-bg {
+.gray-1-bg {
     background: var(--gray-1);
 }
 
@@ -146,10 +150,27 @@ body {
     background: var(--gray-6);
 }
 
+.mantis-bg {
+    background: var(--mantis);
+}
+
 
 // Font size
+.fs-9 {
+    font-size: 9px;
+    line-height: 9px;
+}
+.fs-10 {
+    font-size: 10px;
+    line-height: 10px;
+}
 .fs-12 {
     font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+    line-height: 13px;
 }
 .fs-14 {
     font-size: 14px;
@@ -209,6 +230,10 @@ body {
     font-weight: 600;
 }
 
+.fw-extraBold {
+    font-weight: 800;
+}
+
 //Border radius
 .radius-8 {
     border-radius: 8px;
@@ -220,6 +245,9 @@ body {
 
 .radius-16 {
     border-radius: 16px;
+}
+.radius-20 {
+    border-radius: 20px;
 }
 
 /* helper , base classes  - END*/
@@ -372,6 +400,13 @@ input {
         color: var(--anzac);
     }
 }
+.text-hover-dark {
+    transition: all .2s linear;
+
+    &:hover {
+        color: var(--gray-1);
+    }
+}
 
 .common-fill-btn {
     padding: 17px 39px;
@@ -411,12 +446,20 @@ input {
     flex-direction: column;
     max-width: 480px;
     width: 100%;
+    &.pickup-tabs {
+        max-width: 320px;
+    }
 }
 
 .tabs__head {
     padding: 6px 9px;
     border: 1px solid #D1D3D6;
     margin-bottom: 20px;
+}
+
+.pickup-tabs-head {
+    max-width: 261px;
+    margin: 0 auto;
 }
 
 .tabs__toggle {
@@ -519,12 +562,37 @@ input {
         height: 18px;
         background: url(../img/arrow-right.svg);
         background-repeat: no-repeat;
-        transition: all .2s linear;
+        transition: all .150s linear;
     }
 
     &:hover {
         &::after {
             right: 12px;
+        }
+    }
+}
+
+.back-btn {
+    padding: 14px 34px 14px 54px;
+    border: 1px solid var(--anzac);
+    &:focus {
+        outline: none;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 30px;
+        top: 17px;
+        width: 14px;
+        height: 14px;
+        background: url(../img/arrow-left.svg);
+        background-repeat: no-repeat;
+        transition: all .150s linear;
+    }
+
+    &:hover {
+        &::after {
+            left: 24px;
         }
     }
 }
@@ -536,7 +604,74 @@ input {
     max-width: 49px;
     width: 100%;
 }
+
+.right-content-height {
+    height: 960px;
+    overflow-y: auto;
+}
+
+.content-area-wrapper {
+    padding: 40px 30px;
+
+    .order-options {
+        margin-bottom: 30px;
+
+        .option-heading-area {
+            border-bottom: 1px solid var(--gray-5);
+            padding: 20px 30px;
+
+            .heading-status {
+                padding: 2px 6px 3px 6px;
+            }
+        }
+
+        .option-action-btn {
+            .edit-cion-btn {
+                &:focus {
+                    outline: none;
+                }
+            }
+            .select-btn {
+                padding: 5px 10px !important;
+                border-radius: 6px;
+                transition: all .1s linear;
+
+                &:hover {
+                    background: var(--gray-3) !important;
+                }
+            }
+        }
+
+
+    }
+    .option-btn-area {
+        padding: 50px 30px 120px 30px;
+        &.pickup-pag-btn {
+            padding: 30px;
+        }
+    }
+    
+}
+
+
+
 /*--- Selected delivery outlet /End  ---*/
+
+/*--- Pick Up order /Start  ---*/
+.pickup-tabs-wrap {
+    min-height: 430px;
+}
+/*--- Pick Up order /End  ---*/
+
+
+
+
+
+
+
+
+
+
 
 /*--- Login /Start  ---*/
 /*--- Login /End  ---*/
